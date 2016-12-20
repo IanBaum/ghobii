@@ -2,5 +2,13 @@
  * Place your custom styles here.
  */
 body{
-  background-color: blue;
+  text-align: center;
+}
+
+#navbar{
+  background-color: #555;
+}
+
+#navbar ul li a, .navbar-brand{
+  color: white;
 }

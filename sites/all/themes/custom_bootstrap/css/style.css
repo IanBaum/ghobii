@@ -3,12 +3,21 @@
  */
 body{
   text-align: center;
+  background-color: #1C1C1C;
+  color: #EEF0F2;
 }
 
 #navbar{
-  background-color: #555;
+  background-color: #DADDD8;
 }
 
-#navbar ul li a, .navbar-brand{
-  color: white;
+#navbar a:hover{
+  color: #FF3E00;
+}
+
+#node1{
+  background-color: #DADDD8;
+  color: #333;
+  padding: 1%;
+  border-radius: 10px;
 }

@@ -12,41 +12,106 @@ body{
 }
 
 body,
-#node1::before {
-  background: url(http://www.sgeier.net/fractals/fractals/05/Brittle.jpg) 0 / cover fixed;
+.greyblock::before,
+#navbar::before{
+  background: url(images/background01.png) 0 / cover fixed;
 }
 
-#node1{
-  margin: 100px auto;
-  position: relative;
-  padding: 5px 5px;
-  background: rgba(0,0,0,.3);
-  overflow: hidden;
+.main-container{
+  margin-left: 18%;
+  margin-right: 6%;
 }
-#node1::before{
+
+.greyblock{
+  margin: 0 auto;
+  position: relative;
+  background: rgba(0,0,0,.5);
+  overflow: hidden
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:80%;
+  padding: 20px 20px 43px 20px;
+  font-size: 16px;
+  /*border: 1px solid white;*/
+  border-bottom: none;
+  margin-bottom: -3px;
+}
+.greyblock::before
+{
   content: '';
- margin: -35px;
- position: absolute;
- top: 0;
- right: 0;
- bottom: 0;
- left: 0;
- filter: grayscale(100%) blur(3px);
- z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: grayscale(100%) blur(1px);
+  z-index: -1;
+}
+#navbar::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: grayscale(100%) blur(1px);
+  z-index: -2;
 }
 
 #navbar{
-  background-color: #343434;
+  position: fixed;
+  margin: 0;
+  width: 15%;
+  height:100%;
   border-radius: 0;
-  opacity: 0.5;
+  background: rgba(0,0,0,.5);
+  overflow: hidden;
+  border-right: 1px solid white;
+  padding: 0;
+}
+#navbar img{
+  width:80%;
+  text-align: right;
+}
+#navbar a, #navbar a:active{
+  color: white;
+  font-weight: lighter;
+  font-size: 1.8em;
+}
+.navbar-default{
+  border:none
 }
 
-#navbar a:hover{
-  color: #FFFFFF;
+.page-header{
+  display: none;
 }
 
-
-
-.main-container{
+#block-block-1{
   margin-top: 100px;
+}
+
+#block-block-3, #block-block-4, #block-block-5{
+  margin: 100px 0;
+}
+
+#block-system-main-menu li{
+  text-align: right;
+}
+
+#block-system-main-menu a:hover{
+  background: none;
+  font-size: 2em;
+}
+
+#block-system-main-menu a:active{
+  background: none;
+}
+
+#navbar  .navbar-brand{
+  font-size: 3em;
+  font-weight: normal;
+  text-align: center;
+  margin-right: 33%;
 }
